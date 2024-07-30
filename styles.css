@@ -1,0 +1,230 @@
+:root {
+    --background-color: #FFDBDB;
+    --background-color2: #4B8F8C;
+    --palette-color1: #333745;
+    --palette-color2: #E63462;
+    --palette-color3: #77CBB9;
+}
+
+*, :before, :after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: clamp(15px, 2vw, 20px);
+    background-color: var(--background-color);
+}
+
+p {
+    color: var(--palette-color1);
+}
+
+h1 {
+    color: var(--palette-color2);
+}
+
+header {
+    background-color: var(--background-color2);
+}
+
+header h1 {
+    color: var(--background-color);
+}
+
+main h1 {
+    margin: 2vh 2vw;
+}
+
+.introduction, .article-section {
+    margin: clamp(10px, 3vh, 30px) clamp(20px, 8vw, 100px);
+}
+
+.introduction .index{
+    border: 2px solid var(--background-color2);
+    margin-top: clamp(15px, 4vh, 60px);
+    width: clamp(300px, 40vw, 500px);
+}
+
+.introduction .index ul{
+    margin-left: clamp(30px, 4vw, 60px);
+}
+
+.introduction .index a{
+    color: var(--palette-color1);
+    text-decoration: none;
+}
+
+.article-section ul{
+    margin-bottom: 2vh ;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+.article__aparte {
+    background-color: var(--palette-color3);
+    margin: 3vh 0;
+    border: 2px solid var(--palette-color2);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article__aparte__main-phrase, .article__aparte__explanation {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-columns: 1fr;
+    /* width: 1000px; */
+}
+
+.article__aparte__main-phrase p {
+    font-size: clamp(30px, 3vw, 40px);
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.article__aparte__explanation p{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* Present Simple Aparte Grid template */
+
+
+#article__present-simple .article__aparte__main-phrase p:nth-of-type(1) {
+    grid-column: 1 / 5;
+}
+
+#article__present-simple .article__aparte__main-phrase p:nth-of-type(2) {
+    grid-column: 5 / 9;
+}
+
+#article__present-simple .article__aparte__main-phrase p:nth-of-type(3) {
+    grid-column: 9 / 12;
+}
+
+#article__present-simple .article__aparte__explanation p:nth-of-type(1){
+    grid-column: 1 / 5;
+}
+
+#article__present-simple .article__aparte__explanation p:nth-of-type(2){
+    grid-column: 5 / 9;
+}
+
+#article__present-simple .article__aparte__explanation p:nth-of-type(3){
+    grid-column: 9 / 12;
+}
+
+/* Present Continous Aparte Grid template */
+
+#article__present-continous .article__aparte__main-phrase p:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+#article__present-continous .article__aparte__main-phrase p:nth-of-type(2) {
+    grid-column: 4 / 7;
+}
+
+#article__present-continous .article__aparte__main-phrase p:nth-of-type(3) {
+    grid-column: 7 / 10;
+}
+
+#article__present-continous .article__aparte__main-phrase p:nth-of-type(4) {
+    grid-column: 10 / 13;
+}
+
+#article__present-continous .article__aparte__explanation p:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+#article__present-continous .article__aparte__explanation p:nth-of-type(2) {
+    grid-column: 4 / 7;
+}
+
+#article__present-continous .article__aparte__explanation p:nth-of-type(3) {
+    grid-column: 7 / 10;
+}
+
+#article__present-continous .article__aparte__explanation p:nth-of-type(4) {
+    grid-column: 10 / 13;
+}
+
+/* Present Perfect Aparte Grid template */
+
+#article__present-perfect .article__aparte__main-phrase p:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+#article__present-perfect .article__aparte__main-phrase p:nth-of-type(2) {
+    grid-column: 4 / 7;
+}
+
+#article__present-perfect .article__aparte__main-phrase p:nth-of-type(3) {
+    grid-column: 7 / 10;
+}
+
+#article__present-perfect .article__aparte__main-phrase p:nth-of-type(4) {
+    grid-column: 10 / 13;
+}
+
+#article__present-perfect .article__aparte__explanation p:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+#article__present-perfect .article__aparte__explanation p:nth-of-type(2) {
+    grid-column: 4 / 7;
+}
+
+#article__present-perfect .article__aparte__explanation p:nth-of-type(3) {
+    grid-column: 7 / 10;
+}
+
+#article__present-perfect .article__aparte__explanation p:nth-of-type(4) {
+    grid-column: 10 / 13;
+}
+
+/* Present Perfect Continous Aparte Grid template */
+
+#article__present-perfect-continous .article__aparte__main-phrase p:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+#article__present-perfect-continous .article__aparte__main-phrase p:nth-of-type(2) {
+    grid-column: 3 / 5;
+}
+
+#article__present-perfect-continous .article__aparte__main-phrase p:nth-of-type(3) {
+    grid-column: 5 / 8;
+}
+
+#article__present-perfect-continous .article__aparte__main-phrase p:nth-of-type(4) {
+    grid-column: 8 / 10 ;
+}
+
+#article__present-perfect-continous .article__aparte__main-phrase p:nth-of-type(5) {
+    grid-column: 11 / 13;
+}
+
+#article__present-perfect-continous .article__aparte__explanation p:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+#article__present-perfect-continous .article__aparte__explanation p:nth-of-type(2) {
+    grid-column: 3 / 5;
+}
+
+#article__present-perfect-continous .article__aparte__explanation p:nth-of-type(3) {
+    grid-column: 5 / 8;
+}
+
+#article__present-perfect-continous .article__aparte__explanation p:nth-of-type(4) {
+    grid-column: 8 / 10;
+}
+
+#article__present-perfect-continous .article__aparte__explanation p:nth-of-type(5) {
+    grid-column: 11 / 13;
+}
