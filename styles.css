@@ -1,8 +1,8 @@
 :root {
-    --background-color: #FFDBDB;
-    --background-color2: #4B8F8C;
+    --background-color: #fff6e0;
+    --background-color2: #ffb465;
     --palette-color1: #333745;
-    --palette-color2: #E63462;
+    --palette-color2: #ff9b28;
     --palette-color3: #77CBB9;
 }
 
@@ -27,20 +27,69 @@ h1 {
 }
 
 header {
-    background-color: var(--background-color2);
+    background-color: var(--palette-color1);
 }
 
 header h1 {
     color: var(--background-color);
 }
 
-main h1 {
-    margin: 2vh 2vw;
+.hero {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1vw;
+    background-color: var(--background-color2);
 }
 
-.introduction, .article-section {
+.hero h1 {
+    font-size: clamp(80px, 9vw, 170px);
+    align-self: center;
+    margin: 5vw 0;
+    margin-left: 6vw;
+    color: var(--background-color);
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: italic;
+}
+
+.hero p {
+    grid-column: 1/ 2;
+    grid-row: 2/3;
+    height: 50%;
+    max-width: 60%;
+    padding-top: 2vh;
+    justify-self: end;
+    text-align: right;
+}
+
+.hero a {
+    color: var(--palette-color1)
+}
+
+.hero p, .hero li {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: clamp(15px, 3vw, 25px);
+}
+
+.hero .index {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: fit-content;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    border-left: 1px solid var(--palette-color1);
+}
+
+.hero .index ul li {
+list-style-type: none;
+margin-bottom: 1vh;
+}
+
+.article-section {
     max-width: 1500px;
-    margin: clamp(10px, 3vh, 30px) clamp(20px, 8vw, 100px);
+    margin: clamp(10px, 10vh, 100px) clamp(20px, 8vw, 100px);
 }
 
 .introduction .index{
